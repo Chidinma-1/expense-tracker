@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="header"> Expense Tracker</h1>
+    </header>
+
+    <main>
+        <div class="main-container">
+
+            <div class="available-balance">
+                <h2>Your Balance</h2>
+                <h2 id="income-balance">₦0.00</h2>
+            </div>
+
+            <div class="transaction-summary">
+                <ul>
+                    <h2>Income</h2>
+                    <p id="income-amt" class="money plus"> ₦ 0.00</p>
+                </ul>
+
+                <ul>
+                    <h2>Expense</h2>
+                    <p id="expense-amt" class="money minus"> ₦ 0.00</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <h2> Track your savings </h2>
+            <div class="custom-select">
+                <select>
+                    <option value="0">Expense type:</option>
+                    <option value="1">Income</option>
+                    <option value="2">Expense</option>
+                </select>
+            </div>
+            <form class="form">
+                <input class="text-input" id="input-1" placeholder="Enter text...">
+
+                <input class="amount-input" id="input-2" placeholder="Enter amount..">
+
+                <button class="submit-btn">Add transaction</button>
+            </form>
+        </div>
+        <div class="Transaction-history-container">
+            <h2>Transaction History</h2>
+            <ul id="transaction">
+
+            </ul>
+        </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
